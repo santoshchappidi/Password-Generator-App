@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    
+    <h1>PASSWORD GENERATOR</h1>
+    <div class="password-container">
+      <p class="gen hide">
+       Please Tick The Check Box <i class="fas fa-exclamation-circle"></i>
+      </p>
+      <p class="clipboard hide">
+        Password is copied to clipboard <i class="fas fa-check-circle"></i>
+      </p>
+      <div class="password-header">
+        <span id="pwd"></span>
+        <button id="copy">COPY</button>
+        <!-- <button><i class="fas fa-clipboard fa-2x"></i></button> -->
+      </div>
+
+      <div class="password-body">
+        <div class="password-checkbox">
+          <h3>Password Length</h3>
+          <input type="number" value="20" id="len" min="4" max="20" />
+        </div>
+        <div class="password-checkbox">
+          <h3>Contain Uppercase Letters</h3>
+          <input type="checkbox" id="upper" />
+        </div>
+        <div class="password-checkbox">
+          <h3>Contain Lowercase Letters</h3>
+          <input type="checkbox" id="lower" />
+        </div>
+        <div class="password-checkbox">
+          <h3>Contain Numbers</h3>
+          <input type="checkbox" id="number" />
+        </div>
+        <div class="password-checkbox">
+          <h3>Contain Symbols</h3>
+          <input type="checkbox" id="symbol" />
+        </div>
+      </div>
+
+      <div class="password-footer">
+        <button id="generate">Generate Password</button>
+      </div>
+    </div>
+  </body>
+</html>

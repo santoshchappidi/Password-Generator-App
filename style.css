@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #d44059;
+  animation: header 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes header {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+    visibility: visible;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #8e9eab, #eef2f3);
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+.password-container p {
+  margin-top: -1.6rem;
+  color: rgb(243, 208, 119);
+  animation: clipboard 1s;
+}
+
+@keyframes clipboard {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.password-container {
+  height: 470px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #403a3e, #be5869);
+  background-color: grey;
+  padding: 1.8rem;
+  /* box-shadow: 0rem 1rem 2rem rgb(0, 0, 0, 0.7); */
+  animation: pass 2s;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  transition: all 0.5s ease;
+  /* border: 1px solid black; */
+}
+
+@keyframes pass {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    box-shadow: 0rem 2rem 2rem rgb(0, 0, 0, 0.7);
+  }
+}
+
+.password-header {
+  /* border: 1px solid black; */
+  /* margin-top: 2rem; */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.password-header span {
+  border: 1px sold grey;
+  width: 80%;
+  margin: auto 0;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rem 1rem 1.8rem rgb(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.1rem;
+}
+.password-header button {
+  box-shadow: 0rem 1rem 1rem rgb(0, 0, 0, 0.7);
+  padding: 0.5rem 1.5rem;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.1rem;
+  background: rgb(137, 97, 218);
+  transition: all 0.2s ease;
+}
+
+.password-header button:hover {
+  background: rgb(123, 75, 219);
+  color: white;
+}
+
+.password-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+  color: rgb(216, 212, 212);
+  /* border: 1px solid rgb(211, 15, 15); */
+}
+
+.password-body .password-checkbox {
+  /* border: 1px solid black; */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-checkbox h3 {
+  padding: 2rem;
+  font-weight: 500;
+}
+.password-checkbox input {
+  position: relative;
+  margin-right: 2rem;
+  cursor: pointer;
+
+}
+.password-body .password-checkbox input[type=number]{
+  width: 4rem;
+  height: 1.5rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 0.1rem;
+  font-family: 'poppins'Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.password-body .password-checkbox input[type=number]:hover{
+  background-color: #f0ccd2;
+  font-weight: bold;
+
+}
+
+
+.password-footer {
+  width: 100%;
+  height: 5rem;
+  /* border: 1px solid saddlebrown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+
+.password-footer button {
+  font-family: "poppins",Arial, Helvetica, sans-serif;
+  padding: 0.8rem 2rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.1rem;
+  background: rgb(235, 150, 66);
+  transition: 0.2s ease;
+  box-shadow: 0rem 1rem 1rem rgb(0, 0, 0, 0.7);
+}
+
+.password-footer button:hover {
+  background: rgb(212, 118, 24);
+  color: white;
+}
